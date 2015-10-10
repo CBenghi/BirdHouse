@@ -1,0 +1,34 @@
+commands for alsa playback on specific card:
+aplay -Dhw:2,0 piano2.wav
+aplay -Dhw:1,0 piano2.wav
+lsusb 
+	lists usb items
+aplay --list-devices
+	lists devices in a nice tree structure
+
+
+capturing card ids:
+command:
+udevadm monitor --kernel --property --subsystem-match=sound
+
+/devices/platform/bcm2708_usb/usb1/1-1/1-1.5/1-1.5.3/1-1.5.3:1.0/sound/card1
+/devices/platform/bcm2708_usb/usb1/1-1/1-1.5/1-1.5.4/1-1.5.4.4/1-1.5.4.4:1.0/sound/card2
+
+Path monitoring
+
+inotifywait -m wdir -e close_write |
+    while read path action file; do
+ 	aplay -Dhw:1,0 wdir/$file && rm wdir/$file
+    done
+
+inotifywait -m wdir -e close_write |
+    while read path action file; do
+	echo playing $file
+ 	aplay -Dhw:1,0 wdir/$file && rm wdir/$file
+	echo sub ${$file:5:1}
+    done
+
+inotifywait -m wdir -e close_write |
+    while read path action file; do
+ 	./FileReadyAction.sh $file
+    done
