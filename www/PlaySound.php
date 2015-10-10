@@ -2,7 +2,7 @@
 // Start the session
 session_start();
 include_once("bird_array.php");
-// header('Content-Type: application/json');
+header('Content-Type: application/json');
 
 $chosenDevice = -1;
 $chosenChannel = "";
