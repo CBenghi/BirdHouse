@@ -12,8 +12,8 @@ include_once("bird_array.php");
     })(jQuery);
 </script>
 <div class="row-fluid">
-	<div class="page-header">Welcome to <b>"BirdHouses"</b>
-		<p>Click one of the birdhouses</p>
+	<div class="span12">
+		<p>Welcome! Click one of the birdhouses</p>
 		<img src="/img/tree.png" usemap="#bhmap" border="0" width="100%">
 		<map id="bhmap" name="bhmap">
 			<area shape="rect" alt="Discover" title="Discover" coords="0,499,102,634"   href="Bird.php?Id=0" />
@@ -28,18 +28,6 @@ include_once("bird_array.php");
 			<area shape="rect" alt="Discover" title="Discover" coords="684,395,795,534" href="Bird.php?Id=9" />
 		</map>
 	</div>
-    <section>
-        <div class="span12">
-            <div id="buttons" class="row-fluid">
-				<p>
-				<?
-					for($x = 0; $x < $Birdcount; $x++) { ?>
-					<a href="Bird.php?Id=<?= $x ?>"><?= $BirdNames[$x] ?></a><br>
-					<?php } ?>
-				</p>
-            </div>
-        </div>
-    </section>
 </div>
 <?php
 include_once("footer.php");

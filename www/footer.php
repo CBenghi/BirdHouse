@@ -1,5 +1,5 @@
 <footer class="bottombar">
-    <div class="container"><p>&copy; 2014 Aether & Hemera</p></div>
+    <div class="container"><p>&copy; 2015 Aether & Hemera</p></div>
 </footer>
 
 

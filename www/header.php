@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Birdhouses - A&H</title>
+    <title>Generation - A&H</title>
     <meta name="description" content="">
     <meta name="author" content="Aether & Hemera">
 
@@ -43,13 +43,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="index.php">Birdhouses - A&H</a>
-            <div class="nav-collapse">
-                <ul class="nav">
-                    <li <?php if ($active_tab == "Patterns") echo "class='active'"; ?>><a href="index.php">Birds</a></li>
-                    <li <?php if ($active_tab == "About") echo "class='active'"; ?>><a href="about.php">About</a></li>
-                </ul>
-            </div>
+            <a class="brand" href="index.php">Generation - A&H</a>
         </div>
     </div>
 </div>
