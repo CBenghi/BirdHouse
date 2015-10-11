@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Console</title>
+<script src="www/js/libs/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript"> 
+	function refreshStatus() {
+		// $("#status").contentDocument.location.reload(true);
+		$("#status").delay(200).attr("src", "http://10.0.50.20/other/report.php"); 
+	}
+  
+    (function ($) {
+        $(document).ready(function () {
+			$("#button0").click(function () { $("#frame0").attr("src", "http://10.0.50.20/PlaySound.php?Id=0"); refreshStatus(); });
+			$("#button1").click(function () { $("#frame1").attr("src", "http://10.0.50.20/PlaySound.php?Id=1"); refreshStatus(); });
+			$("#button2").click(function () { $("#frame2").attr("src", "http://10.0.50.20/PlaySound.php?Id=2"); refreshStatus(); });
+			$("#button3").click(function () { $("#frame3").attr("src", "http://10.0.50.20/PlaySound.php?Id=3"); refreshStatus(); });
+			$("#button4").click(function () { $("#frame4").attr("src", "http://10.0.50.20/PlaySound.php?Id=4"); refreshStatus(); });
+			$("#button5").click(function () { $("#frame5").attr("src", "http://10.0.50.20/PlaySound.php?Id=5"); refreshStatus(); });
+			$("#button6").click(function () { $("#frame6").attr("src", "http://10.0.50.20/PlaySound.php?Id=6"); refreshStatus(); });
+			$("#button7").click(function () { $("#frame7").attr("src", "http://10.0.50.20/PlaySound.php?Id=7"); refreshStatus(); });
+			$("#button8").click(function () { $("#frame8").attr("src", "http://10.0.50.20/PlaySound.php?Id=8"); refreshStatus(); });
+			$("#button9").click(function () { $("#frame9").attr("src", "http://10.0.50.20/PlaySound.php?Id=9"); refreshStatus(); });
+			$("#statusRefresh").click(function () { refreshStatus(); });
+	 });
+    })(jQuery);
+</script>
+
+
+<h1>Channels</h1>
+<table>
+<tr>
+	<td><button id="button0">Play 0</button></td>
+	<td><iframe id="frame0" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button1">Play 1</button></td>
+	<td><iframe id="frame1" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button2">Play 2</button></td>
+	<td><iframe id="frame2" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button3">Play 3</button></td>
+	<td><iframe id="frame3" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button4">Play 4</button></td>
+	<td><iframe id="frame4" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button5">Play 5</button></td>
+	<td><iframe id="frame5" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button6">Play 6</button></td>
+	<td><iframe id="frame6" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button7">Play 7</button></td>
+	<td><iframe id="frame7" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button8">Play 8</button></td>
+	<td><iframe id="frame8" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+<tr>
+	<td><button id="button9">Play 9</button></td>
+	<td><iframe id="frame9" src="" width="600" height="60" onload="refreshStatus(this);"></iframe></td>
+</tr>
+
+</table>
+<h1>Commands</h1>
+<p>This is a paragraph.</p>
+<table>
+<tr>
+	<td><button id="statusRefresh">Refresh Status</button></td>
+	<td><iframe id="status" src="" width="600" height="120"></iframe></td>
+</tr>
+</table>
+<a href="http://10.0.50.20/dmin/rstrt.php">RESTART</A><BR>
+<a href="http://10.0.50.20/dmin/sdown.php">SHUTDOWN</A><BR>
+
+</body>
+</html>

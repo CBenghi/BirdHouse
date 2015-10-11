@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/prettify.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/libs/jquery-1.7.2.min.js"><\/script>
+    <script src="js/libs/jquery-1.7.2.min.js"></script>
 
     <script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 
