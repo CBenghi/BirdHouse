@@ -7,8 +7,8 @@ header('Content-Type: application/json');
 $chosenDevice = -1;
 $chosenChannel = "";
 
-$speakersDevice =   array( 0,  0,  1,  1,  2,  2,  3,  3,  4,  4 );
-$speakersChannels = array("L","R","L","R","L","R","L","R","L","R");
+$speakersDevice =   array( 4,  3,  1,  0,  2,  4,  3,  1,  0,  2 );
+$speakersChannels = array("L","L","L","L","L","R","R","R","R","R");
 
 $chosenDevice = -1;
 $chosenChannel = "";
